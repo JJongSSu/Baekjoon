@@ -6,7 +6,7 @@ def solution(s):
     #     return True
     # else:
     #     return False
-    if (s.isdigit() and (len(s)==4 or len(s)==6)):
+    if (s.isdigit() and len(s) in (4,6)):
         return True
     else:
         return False
