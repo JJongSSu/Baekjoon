@@ -27,7 +27,7 @@ public class Solution {
              var privacyDatePlusTerm = convertPrivacy.AddMonths(termsDic[splitPrivacy[1]]);
 
              //해당 날짜를 today와 비교(28일 일 때 고려)
-             //만약 같거나 크다면 answer에 추가
+             //만약 같거나 작다면 answer에 추가
              if (privacyDatePlusTerm <= convertToday)
              {
                  answerList.Add(i + 1);
